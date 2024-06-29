@@ -1,0 +1,28 @@
+###
+@baseUrl = http://localhost:3000
+
+# @name protectedRoute
+GET {{baseUrl}}/protected HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCK9.eyJ1c2VyX2lkIjo2LCJleHAiOjE3MTk2OTEyNjN9.9tV1IM_SJgRH-uaKLVnMH4e2TvytTmAOWUo1U4yNfr4
+###
+
+# @name Login
+POST  {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "username": "user2",
+    "password": "pass2"
+}
+###
+
+# @name RegisterUser
+POST  {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "username": "user2",
+    "password": "pass2"
+}
+###
