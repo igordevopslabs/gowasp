@@ -35,4 +35,4 @@ Criar uma API em Go utilizando Gin Gonic e GORM com PostgreSQL que simule a falt
 
 1. Use a biblioteca `tollbooth` para implementar a limitação de taxa.
 
-Com isso, mitigamos a vulnerabilidade de falta de controle de recursos e limitação de taxa, garantindo que a API não seja abusada com um número excessivo de requisições. Quando estiver pronto, podemos passar para o próximo exemplo.
+Com isso, mitigamos a vulnerabilidade de falta de controle de recursos e limitação de taxa, garantindo que a API não seja abusada com um número excessivo de requisições.
