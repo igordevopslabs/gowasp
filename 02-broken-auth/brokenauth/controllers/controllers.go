@@ -37,7 +37,7 @@ func register(c *gin.Context) {
 	}
 
 	//não podemos salvar a senha em texto plano, da maneira que recebemos
-	//precisamos salva-la minimanete criptada no banco
+	//precisamos salva-la minimanete criptada no banco.
 	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})

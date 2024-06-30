@@ -32,7 +32,6 @@ func createProduct(c *gin.Context) {
 	c.JSON(http.StatusOK, product)
 }
 
-/*
 func searchProduct(c *gin.Context) {
 	name := c.Query("name")
 	var products []models.Product
@@ -46,16 +45,17 @@ func searchProduct(c *gin.Context) {
 
 	c.JSON(http.StatusOK, products)
 }
-*/
 
-// função usando os parametros de consulta corretamente ao inves de concatenar
+/*
+//função usando os parametros de consulta corretamente ao inves de concatenar
 func searchProduct(c *gin.Context) {
-	name := c.Query("name")
-	var products []models.Product
-	if err := db.Where("name LIKE ?", "%"+name+"%").Find(&products).Error; err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-		return
-	}
+    name := c.Query("name")
+    var products []models.Product
+    if err := db.Where("name LIKE ?", "%"+name+"%").Find(&products).Error; err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+        return
+    }
 
-	c.JSON(http.StatusOK, products)
+    c.JSON(http.StatusOK, products)
 }
+*/

@@ -61,7 +61,7 @@ func listProducts(c *gin.Context) {
 		return
 	}
 
-	//trata os dados, criando uma nova estrutura para receber os produtos sem o campo sensivel
+	//trata os dados, criando uma nova estrutura para receber os produtos sem o campo sensivel.
 
 	var publicProducts []models.PublicProduct
 

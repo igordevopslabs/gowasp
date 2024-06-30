@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	//inicia a conexão com o banco de dados
+	//inicia a conexão com o banco de dados.
 	dsn := "host=localhost user=admin password=admin dbname=task_db port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 

@@ -39,7 +39,7 @@ func handlePing(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "pong!"})
 }
 
-//Necessário implementar algum middleware para service como ratelimit dessa rota
+//Necessário implementar algum middleware para service como ratelimit dessa rota.
 //do contrario, podemos ter um DoS, seja por um atacante ou até mesmo fogo amigo.
 
 func limitMiddleware(lmt *limiter.Limiter) gin.HandlerFunc {
